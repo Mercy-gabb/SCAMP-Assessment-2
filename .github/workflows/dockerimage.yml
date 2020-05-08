@@ -2,9 +2,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ SCAMP Assessment 2 ]
   pull_request:
-    branches: [ master ]
+    branches: [ SCAMP Assessment 2 ]
 
 jobs:
 
@@ -14,5 +14,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build the Docker image
+    - name: rearrange data with 80% degree of accuracy
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
